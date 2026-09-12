@@ -108,7 +108,6 @@ jar{
         include "**"
     }
 }
-}
 
 tasks.register('deploy', Jar){
     def projectName = project.name
