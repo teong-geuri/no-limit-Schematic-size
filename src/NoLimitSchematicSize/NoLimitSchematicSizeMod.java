@@ -38,7 +38,7 @@ import static mindustry.Vars.*;
  *  - schematics.add()가 all 목록 등록 + 디스크 저장까지 하는 것: Schematics.java 358~372번 줄
  *    (public void add(Schematic schematic){ all.add(schematic); ...write(schematic, file); })
  */
-public class NoLimitSchematicSizeMod\ extends Mod{
+public class NoLimitSchematicSizeMod extends Mod{
 
     private static final byte[] HEADER = {'m', 's', 'c', 'h'};
     // 사용자가 대형 .msch 파일을 미리 넣어두는 폴더. 데이터 폴더 하위에 자동 생성.
