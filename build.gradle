@@ -53,6 +53,9 @@ java{
 
 dependencies{
     compileOnly mindustryVersion == "be" ? "Anuken:MindustryBuilds:latest" : "Anuken:Mindustry:$mindustryVersion"
+
+    implementation "net.bytebuddy:byte-buddy:1.14.17"
+    implementation "net.bytebuddy:byte-buddy-agent:1.14.17"
 }
 
 def generatedModMetadata = layout.buildDirectory.file("generated/mod.hjson")
