@@ -44,7 +44,7 @@ public class NoLimitSchematicSizeMod extends Mod{
     // 사용자가 대형 .msch 파일을 미리 넣어두는 폴더. 데이터 폴더 하위에 자동 생성.
     private static Fi stagingDir;
 
-    public UnlimitedSchemMod(){
+public NoLimitSchematicSizeMod(){
         Events.on(ClientLoadEvent.class, e -> runOnce());
     }
 
