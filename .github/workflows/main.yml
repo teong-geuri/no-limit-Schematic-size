@@ -21,6 +21,11 @@ jobs:
 
     - name: Set up Android SDK
       uses: android-actions/setup-android@v3
+      with:
+        # 기본값 "tools platform-tools" 중 legacy 'tools' 패키지는
+        # 구글이 SDK 저장소에서 삭제해 더 이상 설치할 수 없음(원인: 이 스텝 실패).
+        # platform-tools만 설치하도록 명시.
+        packages: 'platform-tools'
 
     - name: Accept SDK licenses
       run: yes | sdkmanager --licenses || true
